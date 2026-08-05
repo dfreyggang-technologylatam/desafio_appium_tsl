@@ -8,15 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Pantalla de Products de Swag Labs.
- */
+
 public class ProductsPage {
 
     private final AndroidDriver driver;
     private final WebDriverWait wait;
 
-    // TODO: ajustar localizadores con Appium Inspector
     private final By productsTitle = AppiumBy.androidUIAutomator("new UiSelector().text(\"PRODUCTS\")");
     private final By firstAddToCart = AppiumBy.accessibilityId("test-ADD TO CART");
     private final By cartIcon = AppiumBy.accessibilityId("test-Cart");
