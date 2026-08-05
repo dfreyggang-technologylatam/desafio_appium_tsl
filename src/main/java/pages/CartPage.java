@@ -6,9 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Pantalla del carrito de Swag Labs.
- */
+
 public class CartPage {
 
     private final AndroidDriver driver;
@@ -44,7 +42,7 @@ public class CartPage {
                     "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView("
                             + "new UiSelector().description(\"test-CHECKOUT\"))"));
         } catch (Exception ignored) {
-            // ya visible
+            
         }
     }
 }
