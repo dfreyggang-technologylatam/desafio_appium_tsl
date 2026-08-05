@@ -9,9 +9,7 @@ import pages.CheckoutPage;
 import pages.LoginPage;
 import pages.ProductsPage;
 
-/**
- * Script #4: Flujo completo E2E de compra.
- */
+
 public class PurchaseFlowTest extends BaseTest {
 
     @Test(description = "Flujo E2E: login → carrito → checkout → finish")
