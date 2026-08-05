@@ -7,10 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Pantalla de Login de Swag Labs.
- * Localizadores validados con Appium Inspector.
- */
+
 public class LoginPage {
 
     private final AndroidDriver driver;
@@ -52,7 +49,6 @@ public class LoginPage {
         WebElement error = wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage));
         String text = error.getText();
         if (text == null || text.isBlank()) {
-            // El texto suele estar en un TextView hijo del contenedor test-Error message
             var texts = error.findElements(AppiumBy.className("android.widget.TextView"));
             StringBuilder sb = new StringBuilder();
             for (WebElement t : texts) {
