@@ -1,0 +1,17 @@
+# Build
+target/
+
+# APK (descargar localmente en apps/)
+apps/*.apk
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.DS_Store
+
+# Logs / OS
+*.log
+Thumbs.db
