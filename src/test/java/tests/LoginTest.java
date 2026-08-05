@@ -9,10 +9,7 @@ import pages.CartPage;
 import pages.LoginPage;
 import pages.ProductsPage;
 
-/**
- * Script #1: Login exitoso + agregar producto al carrito.
- * Script #2: Login inválido (locked_out_user).
- */
+
 public class LoginTest extends BaseTest {
 
     private static final String APP_PACKAGE = "com.swaglabsmobileapp";
