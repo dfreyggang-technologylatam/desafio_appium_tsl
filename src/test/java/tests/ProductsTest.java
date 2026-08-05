@@ -10,9 +10,7 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.ProductsPage;
 
-/**
- * Script #3: Orden por precio (High to Low).
- */
+
 public class ProductsTest extends BaseTest {
 
     private static final String APP_PACKAGE = "com.swaglabsmobileapp";
