@@ -7,9 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Pantallas de Checkout (formulario, overview y complete) de Swag Labs.
- */
+
 public class CheckoutPage {
 
     private final AndroidDriver driver;
@@ -34,15 +32,13 @@ public class CheckoutPage {
         driver.findElement(zipField).sendKeys(zip);
         try {
             driver.hideKeyboard();
-        } catch (Exception ignored) {
-            // teclado ya oculto
+        } catch (Exception ignored) { // teclado oculto
         }
         wait.until(ExpectedConditions.elementToBeClickable(continueButton)).click();
     }
 
     public String getTotalText() {
         scrollToText("Total");
-        // En overview el total suele mostrarse como texto "Total: $XX.XX"
         By totalText = AppiumBy.androidUIAutomator("new UiSelector().textContains(\"Total:\")");
         WebElement total = wait.until(ExpectedConditions.visibilityOfElementLocated(totalText));
         return total.getText();
